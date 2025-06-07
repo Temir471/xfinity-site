@@ -9,7 +9,7 @@ body {
   background-color: white;
   color: black;
   line-height: 1.6;
-  background: url(photo/background.png) no-repeat center center fixed;
+  background: url(background.png) no-repeat center center fixed;
   background-size: cover;
 }
 
