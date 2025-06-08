@@ -1,0 +1,477 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+  line-height: 1.6;
+  background: url(background.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.xfinity {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0066A1;
+}
+
+.subtitle {
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: #333;
+}
+
+.nav-links a {
+  margin-left: 30px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  border-bottom: 2px solid black;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 160px; /* с учетом фиксированной навигации */
+  text-align: center;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.subtext {
+  font-size: 14px;
+  color: #333;
+}
+
+.services {
+  background-color: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.services-subtitle {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.service-images {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.service-images img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.equipment {
+  background-color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.equipment-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.equipment h2 {
+  font-size: 28px;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.equipment-items {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.equipment-item {
+  max-width: 300px;
+  text-align: center;
+}
+
+.equipment-item img {
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.equipment-item h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.equipment-item p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+.contacts {
+  background-color: #f2f2f2;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contacts-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contacts h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.contacts-phone {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.contacts-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.contacts-info {
+  flex: 1;
+  min-width: 250px;
+  font-size: 16px;
+}
+
+.contacts-info a {
+  color: #0099ff;
+  text-decoration: none;
+}
+
+.contacts-form {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contacts-form input,
+.contacts-form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.contacts-form button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #0071ce;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contacts-form button:hover {
+  background-color: #005ea6;
+}
+
+.about {
+  background: url("background.png") no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.about-overlay {
+  background-color: rgba(255, 255, 255, 0.95); /* легкий белый фон для читаемости */
+  padding: 40px 20px;
+  border-radius: 10px;
+  max-width: 800px;
+}
+
+.about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.about p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+.company-overview {
+  padding: 80px 20px;
+  background-color: #fff;
+}
+
+.overview-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.overview-image img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.overview-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.overview-text h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.overview-sub {
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.overview-line {
+  width: 40px;
+  height: 3px;
+  background-color: #00a6c4;
+  margin-bottom: 20px;
+}
+
+.overview-desc {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+.mission-values {
+  padding: 80px 20px;
+  background: #f7f7f7;
+}
+
+.mv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mv-item {
+  background: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.mv-item.image {
+  padding: 0;
+}
+
+.mv-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+.mv-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.mv-item p {
+  font-size: 14px;
+  color: #333;
+}
+
+.jobs {
+  background-color: #f5f5f5;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.jobs h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.job-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.job-item {
+  max-width: 220px;
+}
+
+.job-item img {
+  height: 48px;
+  margin-bottom: 15px;
+}
+
+.job-item h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.job-item p {
+  font-size: 14px;
+  color: #333;
+}
+.hero-section {
+  background: url("background.png") no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.hero-sub {
+  font-size: 18px;
+  color: #111;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.acer-products {
+  background-color: #f0f6ff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.acer-products h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.acer-products .intro {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.product-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 280px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #555;
+}
